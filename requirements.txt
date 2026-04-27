@@ -1,0 +1,28 @@
+# Core
+numpy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine Learning utilities
+scikit-learn
+
+# LLM APIs
+openai
+
+# Embeddings / semantic similarity
+sentence-transformers
+
+# Optional (useful for similarity & vector ops)
+scipy
+
+# RAG (lightweight setup)
+faiss-cpu
+
+# Notebook support
+jupyter
+
+# Utilities
+tqdm
