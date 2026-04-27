@@ -71,7 +71,7 @@ Logging & Visualization
 ---
 
 ## 📁 Project Structure
-
+```
 llm-evaluation-lab/
 ├── src/
 │   ├── llm/
@@ -115,7 +115,7 @@ llm-evaluation-lab/
 │   ├── similarity_heatmap.png
 
 ---
-
+```
 ## 🔬 Key Experiments
 
 ### Day 1 — Variability Exploration
