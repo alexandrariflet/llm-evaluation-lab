@@ -22,17 +22,14 @@ Traditional evaluation metrics like Accuracy or F1-score are not sufficient for 
 
 This project introduces a key concept:
 
-### 🔍 Intent Drift
+### 🔍 Intent Drift (bounded)
 
-Intent Drift is defined as:
+Intent Drift is a normalized metric ∈ [0, 1] that measures:
 
-> The divergence between the semantic meaning of an input prompt and the behavioral consistency of the model’s output under different conditions.
+> The divergence in semantic behavior of a model across different conditions (language, temperature, randomness).
 
-We measure:
-- Semantic similarity between inputs
-- Consistency of outputs across repeated runs
-- Sensitivity to language and prompt changes
-- Model stability under randomness
+0 → fully consistent behavior  
+1 → maximal divergence
 
 ---
 
@@ -120,8 +117,14 @@ llm-evaluation-lab/
 
 ### Day 1 — Variability Exploration
 - Repeated prompt execution
-- Output randomness analysis
+- Cross-lingual and stochastic variability measurement
+- Introduction of bounded drift metric
 - Stability measurement across runs
+
+#### Example Result (Mistral)
+
+- T=0.0 → Drift ≈ 0.50  
+- T=0.7 → Drift ≈ 0.62
 
 ### Day 2 — Intent Drift Analysis
 - Multilingual prompt testing
@@ -173,6 +176,7 @@ Large Language Models should not only be evaluated on correctness, but also on:
 - Sensitivity to input variations
 - Semantic consistency across languages
 - Robustness under retrieval augmentation
+- We implement a bounded version of Intent Drift to enable comparability across experiments.
 
 This project treats LLMs as probabilistic systems rather than deterministic tools.
 

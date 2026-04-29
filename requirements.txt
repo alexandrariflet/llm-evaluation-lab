@@ -9,16 +9,13 @@ seaborn
 # Machine Learning utilities
 scikit-learn
 
-# LLM APIs
-openai
-
 # Embeddings / semantic similarity
 sentence-transformers
 
-# Optional (useful for similarity & vector ops)
+# Optional (vector ops)
 scipy
 
-# RAG (lightweight setup)
+# RAG
 faiss-cpu
 
 # Notebook support
@@ -26,3 +23,6 @@ jupyter
 
 # Utilities
 tqdm
+
+# Local LLM integration (Ollama via HTTP)
+requests

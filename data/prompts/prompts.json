@@ -1,0 +1,14 @@
+{
+  "en": {
+    "question": "In your own words, could you tell us of one thing you are looking forward to over the next 12 months?",
+    "answer": "Christmas"
+  },
+  "de": {
+    "question": "Könnten Sie uns in Ihren eigenen Worten sagen, auf welche eine Sache Sie sich in den nächsten 12 Monaten besonders freuen?",
+    "answer": "Weihnachten"
+  },
+  "pt": {
+    "question": "Por palavras, suas, pode dizer-nos o que espera nos próximos 12 meses?",
+    "answer": "Natal"
+  }
+}
