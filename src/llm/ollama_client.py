@@ -67,6 +67,7 @@ class OllamaClient:
 
                 # Optional debug (VERY useful)
                 print(f"[Ollama] {elapsed:.2f}s | temp={temperature}")
+                print("Output: ", output)
 
                 return output
 
